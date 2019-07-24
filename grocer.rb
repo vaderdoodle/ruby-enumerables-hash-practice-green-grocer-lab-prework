@@ -33,7 +33,6 @@ coupons.each do |coupon|
 end
 cart
 end
-end
 
 def apply_clearance(cart)
   # code here
