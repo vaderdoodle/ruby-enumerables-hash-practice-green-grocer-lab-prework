@@ -16,9 +16,7 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
-#iterate into coupons array and down into coupons hash
 coupons.each do |coupon|
-  #coupon.each do |attribute, value|
   name = coupon[:item] #makes things easier
 
   if cart[name] && cart[name][:count] >= coupon[:num]
