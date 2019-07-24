@@ -19,7 +19,6 @@ def apply_coupons(cart, coupons)
 #iterate into coupons array and down into coupons hash
 coupons.each do |coupon|
   coupon.each do |attribute, value|
-  name = coupon[:item] #makes things easier
 
   if cart[coupon[:item]] && cart[coupon[:item]][:count] >= coupon[:num]
     if cart["#{coupon[:item]} W/COUPON"]
